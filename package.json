@@ -1,20 +1,33 @@
 {
   "name": "ai-assit",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc && vite build",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.11"
+    "@deepgram/sdk": "^3.2.0",
+    "autoprefixer": "^10",
+    "gpt-3-encoder": "^1.1.4",
+    "langchain": "^0.1.31",
+    "openai": "^4.33.0",
+    "pinia": "^2.1.7",
+    "postcss": "^8",
+    "replicate": "^0.29.1",
+    "tailwindcss": "^3",
+    "vue": "^3.3.11",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@types/vue": "^2.0.0",
+    "@types/vue-router": "^2.0.0",
     "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
+    "vue-cli-plugin-tailwind": "~3.0.0",
     "vue-tsc": "^1.8.25"
-  }
+  },
+  "type": "module"
 }
