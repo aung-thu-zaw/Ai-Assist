@@ -10,7 +10,8 @@
   "dependencies": {
     "@deepgram/sdk": "^3.2.0",
     "autoprefixer": "^10",
-    "gpt-3-encoder": "^1.1.4",
+    "dotenv": "^16.4.5",
+    "gpt-tokenizer": "^2.1.2",
     "langchain": "^0.1.31",
     "openai": "^4.33.0",
     "pinia": "^2.1.7",

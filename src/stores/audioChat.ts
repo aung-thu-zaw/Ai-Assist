@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
 
-export const useCourseStore = defineStore("audio-chat", () => {
+export const useAudioChatStore = defineStore("audio-chat", () => {
   return {};
 });

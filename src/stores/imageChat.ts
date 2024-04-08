@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
 
-export const useCourseStore = defineStore("image-chat", () => {
+export const useImageChatStore = defineStore("image-chat", () => {
   return {};
 });
