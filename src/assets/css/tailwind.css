@@ -3,3 +3,20 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+  .border-gradient1 {
+    border-image: linear-gradient(to right, #4dc0b5, #3490dc);
+    border-image-slice: 1;
+  }
+
+  .border-gradient2 {
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    border-image-slice: 1;
+  }
+
+  .border-gradient3 {
+    border-image: linear-gradient(to right, #6e45e2, #88d3ce);
+    border-image-slice: 1;
+  }
+}
