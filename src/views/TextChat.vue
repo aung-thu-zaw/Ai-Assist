@@ -44,7 +44,7 @@ const sendQuestion = () => {
                 {{ store.responseFromOpenAi }}
               </p>
             </div>
-            <div v-else class="p-52">
+            <div v-else class="py-52">
               <p class="text-sm text-gray-400 font-bold text-center">
                 <i class="fa-solid fa-comment mr-1.5"></i>
                 There are no questions and response.

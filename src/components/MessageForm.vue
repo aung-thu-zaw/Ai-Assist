@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 
 interface Props {
   modelValue: String;
   sendQuestion: () => void;
-  tokenCount: Number;
+  tokenCount?: Number;
 }
 
 const props = defineProps<Props>();
@@ -46,7 +47,10 @@ const onInput = (event: Event) => {
       </button>
     </div>
 
-    <p class="text-xs font-medium text-gray-300">
+    <p
+      v-if="useRoute().path === '/text-chat'"
+      class="text-xs font-medium text-gray-300"
+    >
       Token Length : {{ tokenCount }}
     </p>
   </form>

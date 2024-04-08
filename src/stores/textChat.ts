@@ -8,9 +8,7 @@ type MessageProps = Array<{ role: string; content: string }>;
 export const useTextChatStore = defineStore("text-chat", () => {
   const openAiApiKey = import.meta.env.VITE_OPENAI_API_KEY;
 
-  if (!openAiApiKey) {
-    throw new Error("OpenAI API key not provided");
-  }
+  if (!openAiApiKey) throw new Error("OpenAI API key not provided");
 
   const openAiOptions: ClientOptions = {
     apiKey: openAiApiKey,
@@ -21,7 +19,7 @@ export const useTextChatStore = defineStore("text-chat", () => {
 
   const analyzeText = ref("");
   const questionAboutAnalyzeText = ref("");
-  const promptForMessages = ref<MessageProps>([]);
+  const promptForMessages = ref<MessageProps | any>([]);
   const responseFromOpenAi = ref("");
   const tokenLength = ref(0);
 
